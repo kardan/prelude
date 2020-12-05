@@ -75,8 +75,7 @@
 (global-aggressive-indent-mode 1)
 (add-to-list 'aggressive-indent-excluded-modes 'Dockerfile)
 
-(add-hook 'prog-mode-hook (lambda ()
-                            (run-hooks 'hs-minor-mode)))
+(add-hook 'prog-mode-hook 'hs-minor-mode)
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;; Org mode
