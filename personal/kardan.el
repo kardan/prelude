@@ -5,6 +5,14 @@
 ;; Keep this minimal
 
 ;;; Code:
+(add-to-list 'package-archives
+             '("melpa" . "http://melpa.milkbox.net/packages/") t)
+
+
+(add-to-list 'package-archives
+			 '("marmalade" . "http://marmalade-repo.org/packages/") t)
+
+
 (declare-function prelude-require-packages "prelude-packages.el")
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -56,6 +64,7 @@
   ;; Dark Theme, To fix issue with fringe in material load flatland first.
   (load-theme 'flatland t)
   (load-theme 'doom-material t)
+  (set-face-attribute 'region nil :background "#111")
 
   ;; Light theme
   ;; (load-theme 'flatui)
